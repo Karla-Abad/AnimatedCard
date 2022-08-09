@@ -9,18 +9,18 @@ html {
 }
 
 body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
 img {
-  width: 6rem;
-  height: 6rem;
   border-radius: 3rem;
   border: 0.4rem solid white;
+  height: 6rem;
   transition: transform 0.3s;
+  width: 6rem;
 }
 
 .container:hover img {
@@ -30,8 +30,8 @@ img {
 .container {
   border-radius: 3rem;
   box-shadow: 0 0 2rem 3rem #f9f9f9;
-  max-width: 500px;
   margin: 0 2rem;
+  max-width: 500px;
   overflow: hidden;
   transform: rotate(-5deg);
   transition: transform 0.2s;
@@ -58,8 +58,8 @@ img {
 }
 
 .userName {
-  margin: 0 1rem;
   align-self: center;
+  margin: 0 1rem;
 }
 
 @media screen and (min-width: 768px) {
