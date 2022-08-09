@@ -9,33 +9,36 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 img {
   width: 6rem;
   height: 6rem;
   border-radius: 3rem;
-  border: 0.3rem solid white;
+  border: 0.4rem solid white;
+  transition: transform 0.3s;
+}
+
+.container:hover img {
+  transform: scale(1.15);
 }
 
 .container {
   border-radius: 3rem;
   box-shadow: 0 0 2rem 3rem #f9f9f9;
-  width: 90vw;
-  margin: 2rem auto;
+  max-width: 500px;
+  margin: 0 2rem;
   overflow: hidden;
   transform: rotate(-5deg);
+  transition: transform 0.2s;
 }
 
 .container:hover {
   transform: rotate(0);
-}
-
-img:hover {
-  transform: scale(1.15);
 }
 
 .footer {
@@ -59,9 +62,12 @@ img:hover {
   align-self: center;
 }
 
-@media screen and (min-width: 760px) {
-  .container {
-    width: 500px;
-    margin: 1.5rem;
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 4rem;
+  }
+
+  .footer {
+    padding: 2rem 4rem;
   }
 }
