@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  border: 0.3rem solid white;
+}
+
+.container {
+  border-radius: 3rem;
+  box-shadow: 0 0 2rem 3rem #f9f9f9;
+  width: 90vw;
+  margin: 2rem auto;
+  overflow: hidden;
+  transform: rotate(-5deg);
+}
+
+.container:hover {
+  transform: rotate(0);
+}
+
+img:hover {
+  transform: scale(1.15);
+}
+
+.footer {
+  display: flex;
+  color: white;
+  background: rgb(92, 191, 187);
+  background: linear-gradient(
+    54deg,
+    rgba(92, 191, 187, 1) 26%,
+    rgba(116, 214, 144, 1) 93%
+  );
+}
+
+.footer,
+.main {
+  padding: 1.5rem 3rem;
+}
+
+.userName {
+  margin: 0 1rem;
+  align-self: center;
+}
+
+@media screen and (min-width: 760px) {
+  .container {
+    width: 500px;
+    margin: 1.5rem;
+  }
+}
